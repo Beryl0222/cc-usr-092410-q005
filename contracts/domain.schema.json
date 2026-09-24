@@ -9,7 +9,8 @@
     "aggregate_id",
     "occurred_at",
     "version",
-    "summary"
+    "summary",
+    "payload"
   ],
   "properties": {
     "event_id": {
@@ -23,7 +24,21 @@
         "SOURCE_CLEARED",
         "SIMILARITY_FLAGGED",
         "CHANGE_REVIEWED",
-        "VERSION_RELEASED"
+        "VERSION_RELEASED",
+        "SOURCE_WITHDRAWN",
+        "COMPONENT_REGISTERED",
+        "COMPONENT_RELEASED",
+        "COMPONENT_DEPLOYED",
+        "RETIREMENT_INITIATED",
+        "DEPLOYMENT_SCOPE_FROZEN",
+        "EMERGENCY_BLOCK_ISSUED",
+        "REPLACEMENT_PLAN_SUBMITTED",
+        "RETIREMENT_SIGNED",
+        "RETIREMENT_ITEM_DECIDED",
+        "EXECUTION_RECEIPT_RECORDED",
+        "RECEIPT_CONFLICT_FLAGGED",
+        "INVESTIGATION_RESOLVED",
+        "RETIREMENT_BATCH_CLOSED"
       ]
     },
     "aggregate_type": {
@@ -32,6 +47,9 @@
         "curatorial_thesis",
         "research_asset",
         "experience_proposal",
+        "interactive_component",
+        "digital_exhibit",
+        "component_retirement",
         "approval_decision"
       ]
     },
@@ -47,10 +65,23 @@
       "type": "integer",
       "minimum": 1
     },
+    "seq": {
+      "type": "integer",
+      "minimum": 1
+    },
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    },
+    "causation_id": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

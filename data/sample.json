@@ -1,9 +1,18 @@
 {
   "event_id": "sample-005-001",
-  "event_type": "THESIS_SUBMITTED",
-  "aggregate_type": "curatorial_thesis",
-  "aggregate_id": "digital_exhibit_governance-001",
+  "event_type": "RETIREMENT_INITIATED",
+  "aggregate_type": "component_retirement",
+  "aggregate_id": "R-sample-001",
   "occurred_at": "2026-09-20T18:00:00+08:00",
   "version": 1,
-  "summary": "登记数字文化展项立项台的首条领域记录"
+  "summary": "样例：学术来源撤回后发起互动组件退役",
+  "payload": {
+    "retirement_id": "R-sample-001",
+    "component_id": "comp-interactive-quiz",
+    "component_version": "3.1.0",
+    "reason_code": "SOURCE_WITHDRAWN",
+    "reason_detail": "引用的学术来源已被期刊撤回，需逐展项评估处置",
+    "source_event_id": "evt-sample-source-withdrawn",
+    "initiator": "平台主管"
+  }
 }
