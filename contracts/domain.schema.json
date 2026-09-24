@@ -21,9 +21,24 @@
       "enum": [
         "THESIS_SUBMITTED",
         "SOURCE_CLEARED",
+        "SOURCE_WITHDRAWN",
+        "COMPONENT_REUSE_REGISTERED",
         "SIMILARITY_FLAGGED",
         "CHANGE_REVIEWED",
-        "VERSION_RELEASED"
+        "VERSION_RELEASED",
+        "COMPONENT_BLOCKED_URGENTLY",
+        "RETIREMENT_INITIATED",
+        "DEPLOYMENT_SCOPE_FROZEN",
+        "REPLACEMENT_SUBMITTED",
+        "SIGNED_OFF_BY_ACADEMIC",
+        "SIGNED_OFF_BY_LEGAL",
+        "DISPOSAL_DECIDED",
+        "DISPOSAL_REQUESTED",
+        "DISPOSAL_BATCH_CLOSED",
+        "EXECUTION_RECEIPT_REPORTED",
+        "EXECUTION_RECEIPT_CONFIRMED",
+        "RECEIPT_DISCREPANCY_INVESTIGATION_OPENED",
+        "INVESTIGATION_RESOLVED"
       ]
     },
     "aggregate_type": {
@@ -32,7 +47,13 @@
         "curatorial_thesis",
         "research_asset",
         "experience_proposal",
-        "approval_decision"
+        "approval_decision",
+        "component_version",
+        "retirement_case",
+        "disposal_action",
+        "execution_receipt",
+        "receipt_investigation",
+        "urgent_block"
       ]
     },
     "aggregate_id": {

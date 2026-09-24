@@ -1,0 +1,16 @@
+{
+  "event_id": "sample-retirement-001",
+  "event_type": "RETIREMENT_INITIATED",
+  "aggregate_type": "retirement_case",
+  "aggregate_id": "RC-0001",
+  "occurred_at": "2026-09-24T09:00:00+08:00",
+  "version": 1,
+  "summary": "互动组件 timeline-map 2.3.0 因学术来源撤回发起退役",
+  "payload": {
+    "component_id": "timeline-map",
+    "component_version": "2.3.0",
+    "reason": "学术来源 S-0017 已被期刊撤回，授权依据变化",
+    "initiator": "platform-supervisor",
+    "related_blocks": []
+  }
+}
